@@ -1,0 +1,27 @@
+{
+  "name": "@advclb/foobar-base",
+  "version": "0.0.0",
+  "description": "shared data, functions and types for foobar component",
+  "main": "dist/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist/*",
+    "lib/*"
+  ],
+  "scripts": {
+    "build": "ac lib:build",
+    "test": "jest",
+    "lint": "ac lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advclb/foobar.git"
+  },
+  "author": "First Last <first.last@example.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/advclb/foobar/issues"
+  },
+  "homepage": "https://github.com/advclb/foobar#readme"
+}

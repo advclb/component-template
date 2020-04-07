@@ -1,0 +1,7 @@
+$ac-foobar-background-color: #000000 !default;
+$ac-foobar-text-color: #ffffff !default;
+
+.ac-foobar {
+  background: $ac-foobar-background-color;
+  color: $ac-foobar-text-color;
+}

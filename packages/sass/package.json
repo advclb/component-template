@@ -1,0 +1,21 @@
+{
+  "name": "@advclb/foobar-sass",
+  "version": "0.0.0",
+  "description": "base style with sass variables for foobar component",
+  "main": "index.scss",
+  "sass": "index.scss",
+  "style": "index.scss",
+  "scripts": {
+    "lint": "ac lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advclb/foobar.git"
+  },
+  "author": "First Last <first.last@example.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/advclb/foobar/issues"
+  },
+  "homepage": "https://github.com/advclb/foobar#readme"
+}

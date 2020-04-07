@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "advclb",
+    "advclb-react",
+    "advclb-typescript"
+  ]
+}

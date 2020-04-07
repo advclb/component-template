@@ -1,0 +1,20 @@
+{
+  "name": "@advclb/foobar-css",
+  "version": "0.0.0",
+  "description": "base style for foobar component",
+  "main": "index.css",
+  "style": "index.css",
+  "scripts": {
+    "lint": "ac lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advclb/foobar.git"
+  },
+  "author": "First Last <first.last@example.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/advclb/foobar/issues"
+  },
+  "homepage": "https://github.com/advclb/foobar#readme"
+}
