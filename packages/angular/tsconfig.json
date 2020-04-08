@@ -3,8 +3,8 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -17,5 +17,5 @@
     "strictNullChecks": true
   },
   "include": ["src"],
-  "exclude": ["**/*.spec.ts", "**/*.spec.tsx"]
+  "exclude": ["**/*.spec.ts"]
 }

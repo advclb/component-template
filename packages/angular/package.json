@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/advclb/foobar/issues"
   },
-  "homepage": "https://github.com/advclb/foobar#readme"
+  "homepage": "https://github.com/advclb/foobar#readme",
+  "peerDependencies": {
+    "@angular/core": "*"
+  }
 }

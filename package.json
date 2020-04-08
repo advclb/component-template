@@ -27,6 +27,7 @@
   "homepage": "https://github.com/advclb/foobar#readme",
   "devDependencies": {
     "@advclb/scripts": "latest",
+    "@angular/core": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
