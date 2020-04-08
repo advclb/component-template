@@ -25,6 +25,9 @@
     "url": "https://github.com/advclb/foobar/issues"
   },
   "homepage": "https://github.com/advclb/foobar#readme",
+  "dependencies": {
+    "@advclb/foobar-base": "0.0.0"
+  },
   "peerDependencies": {
     "@angular/core": "*"
   }

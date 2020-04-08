@@ -44,6 +44,8 @@
     "react-dom": "latest",
     "stylelint": "latest",
     "stylelint-config-advclb": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vue": "latest",
+    "vue-class-component": "latest"
   }
 }
