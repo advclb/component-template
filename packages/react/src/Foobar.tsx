@@ -6,6 +6,6 @@ export interface FoobarProps {
 
 export class Foobar extends Component<FoobarProps> {
   render(): ReactElement {
-    return <div></div>;
+    return <div className="ac-foobar">{this.props.children}</div>;
   }
 }

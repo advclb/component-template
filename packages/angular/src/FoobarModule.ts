@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 
-import { Foobar } from "./foobar.component";
+import { Foobar } from "./Foobar";
 
 @NgModule({
   declarations: [Foobar],

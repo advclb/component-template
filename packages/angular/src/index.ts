@@ -1,2 +1,2 @@
-export * from "./foobar.component";
-export * from "./foobar.module";
+export * from "./Foobar";
+export * from "./FoobarModule";
