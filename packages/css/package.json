@@ -1,20 +1,24 @@
 {
-  "name": "@advclb/foobar-css",
+  "name": "@advclb/design-system-css",
   "version": "0.0.0",
-  "description": "base style for foobar component",
+  "description": "base style for design system",
   "main": "index.css",
   "style": "index.css",
   "scripts": {
-    "lint": "ac lint"
+    "lint": "../../node_modules/.bin/ac lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/advclb/foobar.git"
+    "url": "git+https://github.com/advclb/design-system.git"
   },
-  "author": "First Last <first.last@example.com>",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "guo@adventureclub.io",
+    "url": "https://guoyunhe.me/"
+  },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/advclb/foobar/issues"
+    "url": "https://github.com/advclb/design-system/issues"
   },
-  "homepage": "https://github.com/advclb/foobar#readme"
+  "homepage": "https://github.com/advclb/design-system#readme"
 }

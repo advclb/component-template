@@ -1,7 +1,7 @@
 {
-  "name": "@advclb/foobar-angular",
+  "name": "@advclb/design-system-angular",
   "version": "0.0.0",
-  "description": "angular foobar component",
+  "description": "angular design system",
   "main": "dist/index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,23 +10,27 @@
     "lib/*"
   ],
   "scripts": {
-    "start": "ac doc:start",
-    "build": "ac doc:build && ac lib:build",
+    "start": "../../node_modules/.bin/ac doc:start",
+    "build": "../../node_modules/.bin/ac doc:build && ac lib:build",
     "test": "jest",
-    "lint": "ac lint"
+    "lint": "../../node_modules/.bin/ac lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/advclb/foobar.git"
+    "url": "git+https://github.com/advclb/design-system.git"
   },
-  "author": "First Last <first.last@example.com>",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "guo@adventureclub.io",
+    "url": "https://guoyunhe.me/"
+  },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/advclb/foobar/issues"
+    "url": "https://github.com/advclb/design-system/issues"
   },
-  "homepage": "https://github.com/advclb/foobar#readme",
+  "homepage": "https://github.com/advclb/design-system#readme",
   "dependencies": {
-    "@advclb/foobar-base": "0.0.0"
+    "@advclb/design-system-base": "0.0.0"
   },
   "peerDependencies": {
     "@angular/core": "*"
