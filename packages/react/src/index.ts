@@ -1,1 +1,1 @@
-export * from "./Foobar";
+export * from "./Button";

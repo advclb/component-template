@@ -1,4 +1,1 @@
-.ac-foobar {
-  background: #000000;
-  color: #ffffff;
-}
+@import url("./Button.css");
