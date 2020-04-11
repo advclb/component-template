@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactElement } from "react";
 import { Link, LinkProps } from "react-router-dom";
 import cn from "classnames";
 
@@ -11,14 +11,14 @@ export type ButtonLinkProps = {
   primary?: boolean;
 } & LinkProps;
 
-export default function ButtonLink({
+export function ButtonLink({
   children,
   className,
   flat,
   outline,
   primary,
   ...rest
-}: ButtonLinkProps): ReactNode {
+}: ButtonLinkProps): ReactElement {
   return (
     <Link
       className={cn("button", className, {

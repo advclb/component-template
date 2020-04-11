@@ -1,43 +1,31 @@
 /* Default */
 .button {
+  display: inline-block;
   box-sizing: border-box;
-  min-width: var(--button-min-width, 6rem);
+  min-width: 6rem;
   padding: var(--button-padding-y, 0.25rem) var(--button-padding-x, 1rem);
-  border: var(--button-border-width, 0) solid
-    var(--button-border-color, transparent);
   border-radius: var(--button-border-width, 0.3rem);
   background: var(--button-background, #dddddd);
-  color: var(--button-color, #333333);
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .button:hover {
-  background: var(--button-hover-background, #cccccc);
-  color: var(--button-hover-color, #222222);
+  filter: brightness(110%);
 }
 
 .button:active {
-  background: var(--button-active-background, #bbbbbb);
-  color: var(--button-active-color, #000000);
+  filter: brightness(90%);
 }
 
 /* Primary */
 
 .button--primary {
-  border: var(--button-primary-border-width, 0) solid
-    var(--button-primary-border-color, transparent);
-  background: var(--button-primary-background, #000000);
-  color: var(--button-primary-color, #dddddd);
-}
-
-.button--primary:hover {
-  background: var(--button-primary-hover-background, #333333);
-  color: var(--button-primary-hover-color, #eeeeee);
-}
-
-.button--primary:active {
-  background: var(--button-primary-active-background, #555555);
-  color: var(--button-primary-active-color, #ffffff);
+  background: var(--primary-background-color);
+  color: var(--primary-text-color);
 }
 
 /* Flat */
@@ -48,33 +36,10 @@
   color: var(--button-flat-color, inherit);
 }
 
-.button--flat:hover {
-  background: var(--button-flat-hover-background, #dddddd);
-  color: var(--button-flat-hover-color, inherit);
-}
-
-.button--flat:active {
-  background: var(--button-flat-active-background, #cccccc);
-  color: var(--button-flat-active-color, inherit);
-}
-
 /* Outline */
 
 .button--outline {
-  border: var(--button-outline-border-width, 1px) solid
-    var(--button-outline-border-color, #000000);
+  border: var(--button-outline-border-width, 1px) solid var(--border-color);
   background: transparent;
-  color: var(--button-outline-color, #000000);
-}
-
-.button--outline:hover {
-  border-color: var(--button-outline-hover-border-color, #333333);
-  background: transparent;
-  color: var(--button-outline-hover-color, #333333);
-}
-
-.button--outline:active {
-  border-color: var(--button-outline-active-border-color, #555555);
-  background: transparent;
-  color: var(--button-outline-active-color, #555555);
+  color: var(--text-color, #000000);
 }

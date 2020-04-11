@@ -1,0 +1,14 @@
+/* colors */
+:root {
+  --text-color: #444444;
+  --background-color: #ffffff;
+  --border-color: #444444;
+  --primary-text-color: #ffffff;
+  --primary-background-color: #444444;
+}
+
+/* dark theme colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}

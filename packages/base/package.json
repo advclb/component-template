@@ -11,8 +11,7 @@
   ],
   "scripts": {
     "build": "../../node_modules/.bin/ac lib:build",
-    "test": "jest",
-    "lint": "../../node_modules/.bin/ac lint"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

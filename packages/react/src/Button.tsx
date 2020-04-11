@@ -13,7 +13,7 @@ export type ButtonProps = {
   HTMLButtonElement
 >;
 
-export default function Button({
+export function Button({
   children,
   className,
   flat,

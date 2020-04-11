@@ -1,33 +1,29 @@
 import React, { ReactElement } from "react";
-import Button from "../../src/Button";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import * as pages from "./pages";
 
 export default function App(): ReactElement {
   return (
-    <div>
-      <h3>Normal</h3>
-      <p>
-        <Button primary>OK</Button>
-        &nbsp;
-        <Button>Cancel</Button>
-        &nbsp;
-        <Button>Back</Button>
-      </p>
-      <h3>Flat</h3>
-      <p>
-        <Button flat>More</Button>
-        &nbsp;
-        <Button flat>Help</Button>
-        &nbsp;
-        <Button flat>Show</Button>
-      </p>
-      <h3>Outline</h3>
-      <p>
-        <Button outline>More</Button>
-        &nbsp;
-        <Button outline>Help</Button>
-        &nbsp;
-        <Button outline>Show</Button>
-      </p>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            {Object.values(pages).map((p) => (
+              <li key={p.meta.path}>
+                <Link to={p.meta.path}>{p.meta.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          {Object.values(pages).map((p) => (
+            <Route path={p.meta.path} key={p.meta.path} component={p} />
+          ))}
+        </Switch>
+      </div>
+    </Router>
   );
 }
