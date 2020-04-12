@@ -5,9 +5,6 @@
   "main": "index.scss",
   "sass": "index.scss",
   "style": "index.scss",
-  "scripts": {
-    "lint": "../../node_modules/.bin/ac lint"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/advclb/design-system.git"

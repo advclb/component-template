@@ -10,7 +10,7 @@
     "lib/*"
   ],
   "scripts": {
-    "build": "../../node_modules/.bin/ac lib:build",
+    "build": "ac lib:build",
     "test": "jest"
   },
   "repository": {

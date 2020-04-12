@@ -1,15 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "install": "lerna bootstrap",
     "build": "lerna run build",
-    "test": "lerna run test",
-    "lint": "prettier --write . && eslint --ext .ts,.tsx --fix . && stylelint --fix **/*.css **/*.scss"
+    "install": "lerna bootstrap",
+    "lint": "prettier --write . && eslint --ext .ts,.tsx --fix . && stylelint --fix **/*.css **/*.scss",
+    "start": "lerna run start",
+    "test": "lerna run test"
   },
   "devDependencies": {
     "@advclb/react-docgen-loader": "^0.1.0",
     "@advclb/sassdoc-loader": "^0.1.0",
-    "@advclb/scripts": "^0.6.0",
+    "@advclb/scripts": "^0.7.0",
     "@angular/core": "^9.1.1",
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.34",

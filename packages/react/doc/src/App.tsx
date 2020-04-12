@@ -16,8 +16,6 @@ export default function App(): ReactElement {
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           {Object.values(pages).map((p) => (
             <Route path={p.meta.path} key={p.meta.path} component={p} />

@@ -10,8 +10,8 @@
     "lib/*"
   ],
   "scripts": {
-    "start": "../../node_modules/.bin/ac doc:start",
-    "build": "../../node_modules/.bin/ac doc:build && ac lib:build",
+    "start": "ac doc:start --port 8001",
+    "build": "ac doc:build && ac lib:build",
     "test": "jest"
   },
   "repository": {

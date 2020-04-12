@@ -4,9 +4,6 @@
   "description": "base style for design system",
   "main": "index.css",
   "style": "index.css",
-  "scripts": {
-    "lint": "../../node_modules/.bin/ac lint"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/advclb/design-system.git"
