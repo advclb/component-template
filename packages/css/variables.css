@@ -8,7 +8,7 @@
   /* light theme colors */
   --text-color: #444444;
   --background-color: #ffffff;
-  --border-color: #444444;
+  --link-color: #089784;
   --primary-color: #7a175d;
   --primary-diff-color: #ffffff;
   --secondary-color: #444444;
@@ -22,5 +22,10 @@
 /* dark theme colors */
 @media (prefers-color-scheme: dark) {
   :root {
+    --text-color: #ffffff;
+    --background-color: #444444;
+    --primary-color: #f061c5;
+    --secondary-color: #ffffff;
+    --secondary-diff-color: #444444;
   }
 }
