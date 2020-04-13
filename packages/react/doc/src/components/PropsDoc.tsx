@@ -6,8 +6,9 @@ export interface ReactDocProp {
     computed: boolean;
   };
   required: boolean;
-  tsType: {
-    name: string;
+  tsType?: {
+    name?: string;
+    raw?: string;
   };
   description: string;
 }
@@ -23,12 +24,13 @@ export interface PropsDocProps {
 export function PropsDoc({ props }: PropsDocProps): ReactElement {
   return (
     <div>
+      <h2>Properties</h2>
       {Object.keys(props).map((key) => {
         const prop = props[key];
         return (
           <div key={key}>
             <h3>
-              {key} <code>{prop.tsType}</code>
+              {key} <code>{prop?.tsType?.raw || prop?.tsType?.name}</code>
             </h3>
           </div>
         );

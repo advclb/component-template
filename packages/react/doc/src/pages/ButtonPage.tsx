@@ -1,35 +1,64 @@
 import React, { ReactElement } from "react";
+import { PropsDoc } from "../components/PropsDoc";
 import { Button } from "../../../src/Button";
 import doc from "!!@advclb/react-docgen-loader!../../../src/Button";
 
 export function ButtonPage(): ReactElement {
   return (
     <div>
-      <h3>Normal</h3>
+      <h2>Showcase</h2>
+      <h3>Variants &amp; Themes</h3>
       <p>
-        <Button primary>OK</Button>
+        <Button variant="filled" theme="primary">
+          Primary
+        </Button>
         &nbsp;
-        <Button>Cancel</Button>
+        <Button variant="filled" theme="secondary">
+          Secondary
+        </Button>
         &nbsp;
-        <Button>Back</Button>
+        <Button variant="filled" theme="danger">
+          Danger
+        </Button>
+        &nbsp;
+        <Button disabled>Disabled</Button>
       </p>
-      <h3>Flat</h3>
       <p>
-        <Button flat>More</Button>
+        <Button variant="outline" theme="primary">
+          Primary
+        </Button>
         &nbsp;
-        <Button flat>Help</Button>
+        <Button variant="outline" theme="secondary">
+          Secondary
+        </Button>
         &nbsp;
-        <Button flat>Show</Button>
+        <Button variant="outline" theme="danger">
+          Danger
+        </Button>
+        &nbsp;
+        <Button variant="outline" disabled>
+          Disabled
+        </Button>
       </p>
-      <h3>Outline</h3>
       <p>
-        <Button outline>More</Button>
+        <Button variant="flat" theme="primary">
+          Primary
+        </Button>
         &nbsp;
-        <Button outline>Help</Button>
+        <Button variant="flat" theme="secondary">
+          Secondary
+        </Button>
         &nbsp;
-        <Button outline>Show</Button>
+        <Button variant="flat" theme="danger">
+          Danger
+        </Button>
+        &nbsp;
+        <Button variant="flat" disabled>
+          Disabled
+        </Button>
       </p>
-      <pre>{JSON.stringify(doc)}</pre>
+
+      <PropsDoc props={doc.props} />
     </div>
   );
 }

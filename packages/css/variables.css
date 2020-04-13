@@ -1,10 +1,22 @@
-/* colors */
 :root {
+  --border-width: 2px;
+  --border-radius: 2px;
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-large: 32px;
+
+  /* light theme colors */
   --text-color: #444444;
   --background-color: #ffffff;
   --border-color: #444444;
-  --primary-text-color: #ffffff;
-  --primary-background-color: #444444;
+  --primary-color: #7a175d;
+  --primary-diff-color: #ffffff;
+  --secondary-color: #444444;
+  --secondary-diff-color: #ffffff;
+  --danger-color: #cf4e4e;
+  --danger-diff-color: #ffffff;
+  --disabled-color: #a3a3a3;
+  --disabled-diff-color: #eeeeee;
 }
 
 /* dark theme colors */

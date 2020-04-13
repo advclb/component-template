@@ -1,34 +1,25 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, Component } from "react";
 import { Link, LinkProps } from "react-router-dom";
 import cn from "classnames";
 
-export type ButtonLinkProps = {
-  /** Flat button variation */
-  flat?: boolean;
-  /** Outline button variation */
-  outline?: boolean;
-  /** Primary button variantion */
-  primary?: boolean;
-} & LinkProps;
+export interface ButtonLinkProps extends LinkProps {
+  /** Style variant */
+  variant?: "flat" | "filled" | "outline";
+}
 
-export function ButtonLink({
-  children,
-  className,
-  flat,
-  outline,
-  primary,
-  ...rest
-}: ButtonLinkProps): ReactElement {
-  return (
-    <Link
-      className={cn("button", className, {
-        "button--flat": flat,
-        "button--outline": outline,
-        "button--primary": primary,
-      })}
-      {...rest}
-    >
-      {children}
-    </Link>
-  );
+export class ButtonLink extends Component<ButtonLinkProps> {
+  static defaultProps: Partial<ButtonLinkProps> = {
+    variant: "outline",
+  };
+  render(): ReactElement {
+    const { children, className, variant, ...rest } = this.props;
+    return (
+      <Link
+        className={cn("ac-button", "ac-button--" + variant, className)}
+        {...rest}
+      >
+        {children}
+      </Link>
+    );
+  }
 }

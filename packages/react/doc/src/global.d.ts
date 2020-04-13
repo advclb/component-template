@@ -15,8 +15,9 @@ declare module "!!@advclb/react-docgen-loader!*" {
           computed: boolean;
         };
         required: boolean;
-        tsType: {
-          name: string;
+        tsType?: {
+          name?: string;
+          raw?: string;
         };
         description: string;
       };
