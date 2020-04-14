@@ -67,7 +67,7 @@ export class Collapse extends Component<CollapseProps> {
           if (this.root.current) {
             this.root.current.style.height = "0";
           }
-        }, 1);
+        }, 10);
       }
     }
   }

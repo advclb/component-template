@@ -1,0 +1,21 @@
+.ac-accordion {
+  border-top: var(--border-width) solid var(--secondary-color);
+  border-bottom: var(--border-width) solid var(--secondary-color);
+}
+
+.ac-accordion__header {
+  display: flex;
+}
+
+.ac-accordion__header-inner {
+  padding: var(--space-medium);
+  flex: 1 1 auto;
+  line-height: 1em;
+}
+
+.ac-accordion__header-close {
+  padding: var(--space-medium);
+  border: 0;
+  background: transparent;
+  color: inherit;
+}

@@ -52,8 +52,13 @@ export class Accordion extends Component<AccordionProps, AccordionState> {
     return (
       <div className={cn("ac-accordion", className)} {...rest}>
         <div className="ac-accordion__header">
-          {header}
-          <button onClick={computedToggle}>toggle</button>
+          <div className="ac-accordion__header-inner">{header}</div>
+          <button
+            className="ac-accordion__header-close"
+            onClick={computedToggle}
+          >
+            toggle
+          </button>
         </div>
         <Collapse className="ac-accordion__content" open={computedOpen}>
           {children}
