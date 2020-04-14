@@ -6,3 +6,26 @@ body {
 a {
   color: var(--link-color);
 }
+
+code {
+  padding: 0 var(--space-small);
+  border-radius: var(--border-radius);
+  background: var(--overlay-color);
+  font-size: var(--font-size);
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+hr {
+  width: 10rem;
+  margin: 3rem 0;
+}

@@ -29,9 +29,31 @@ export function PropsDoc({ props }: PropsDocProps): ReactElement {
         const prop = props[key];
         return (
           <div key={key}>
-            <h3>
-              {key} <code>{prop?.tsType?.raw || prop?.tsType?.name}</code>
-            </h3>
+            <h3>{key}</h3>
+            <p>{prop?.description}</p>
+            <dl>
+              <dt>Type</dt>
+              <dd>
+                <code>{prop?.tsType?.raw || prop?.tsType?.name}</code>
+              </dd>
+
+              {prop.defaultValue && (
+                <>
+                  <dt>Default</dt>
+                  <dd>
+                    <code>{prop?.defaultValue?.value}</code>
+                  </dd>
+                </>
+              )}
+              {prop.required && (
+                <>
+                  <dt>
+                    <strong>Required</strong>
+                  </dt>
+                  <dd>Yes</dd>
+                </>
+              )}
+            </dl>
           </div>
         );
       })}

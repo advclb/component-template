@@ -5,7 +5,8 @@ import doc from "!!@advclb/react-docgen-loader!../../../src/Button";
 
 export function ButtonPage(): ReactElement {
   return (
-    <div>
+    <>
+      <h1>Button</h1>
       <h2>Showcase</h2>
       <h3>Variants &amp; Themes</h3>
       <p>
@@ -58,8 +59,10 @@ export function ButtonPage(): ReactElement {
         </Button>
       </p>
 
+      <hr></hr>
+
       <PropsDoc props={doc.props} />
-    </div>
+    </>
   );
 }
 

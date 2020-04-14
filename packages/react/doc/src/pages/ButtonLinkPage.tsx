@@ -5,7 +5,8 @@ import doc from "!!@advclb/react-docgen-loader!../../../src/ButtonLink";
 
 export function ButtonLinkPage(): ReactElement {
   return (
-    <div>
+    <>
+      <h1>ButtonLink</h1>
       <h2>Showcase</h2>
       <h3>Variants</h3>
       <p>
@@ -21,8 +22,11 @@ export function ButtonLinkPage(): ReactElement {
           Flat
         </ButtonLink>
       </p>
+
+      <hr></hr>
+
       <PropsDoc props={doc.props} />
-    </div>
+    </>
   );
 }
 
