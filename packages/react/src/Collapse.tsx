@@ -73,6 +73,7 @@ export class Collapse extends Component<CollapseProps> {
   }
 
   render(): ReactElement {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { open, children, className, ...rest } = this.props;
 
     return (
