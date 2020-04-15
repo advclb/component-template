@@ -1,3 +1,28 @@
+/*
+================================================================================
+Global Style Reset
+================================================================================
+*/
+
+/* Scrollbar: Firefox */
+* {
+  scrollbar-color: var(--overlay-color) transparent;
+  scrollbar-width: auto;
+}
+
+/* Scrollbar: Chrome */
+*::-webkit-scrollbar {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--overlay-color);
+}
+
+/* Selection */
+*::selection {
+  background: var(--overlay-color);
+}
+
 body {
   background: var(--background-color);
   color: var(--text-color);
