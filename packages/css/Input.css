@@ -1,0 +1,32 @@
+.ac-input {
+  padding: var(--space-small);
+  border: var(--border-width) solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  color: var(--secondary-color);
+  appearance: none;
+}
+
+.ac-input--underline {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.ac-input--filled {
+  border-color: transparent;
+  background-color: var(--overlay-color);
+}
+
+.ac-input:invalid {
+  color: var(--danger-color);
+  box-shadow: unset;
+}
+
+.ac-input--outline:invalid {
+  border-color: var(--danger-color);
+}
+
+.ac-input--underline:invalid {
+  border-bottom-color: var(--danger-color);
+}

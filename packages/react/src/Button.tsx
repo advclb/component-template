@@ -11,8 +11,6 @@ export interface ButtonProps
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  /** HTML button type */
-  type?: "button" | "submit" | "reset";
   /** Style variant */
   variant?: "flat" | "filled" | "outline";
   /** Color theme */
@@ -23,7 +21,6 @@ export interface ButtonProps
 
 export class Button extends Component<ButtonProps> {
   static defaultProps: Partial<ButtonProps> = {
-    type: "button",
     variant: "filled",
     theme: "secondary",
   };
