@@ -1,0 +1,31 @@
+{
+  "name": "@advclb/design-system-icons",
+  "version": "0.0.0",
+  "description": "svg icons with json data format",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "*.svg",
+    "*.json"
+  ],
+  "scripts": {
+    "build": "ac icon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advclb/design-system.git"
+  },
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "guo@adventureclub.io",
+    "url": "https://guoyunhe.me/"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/advclb/design-system/issues"
+  },
+  "homepage": "https://github.com/advclb/design-system#readme",
+  "dependencies": {
+    "@advclb/design-system-base": "0.0.0"
+  }
+}

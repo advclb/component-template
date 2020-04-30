@@ -29,11 +29,9 @@
   },
   "homepage": "https://github.com/advclb/design-system#readme",
   "dependencies": {
-    "@advclb/design-system-base": "0.0.0"
-  },
-  "devDependencies": {
+    "@advclb/design-system-base": "0.0.0",
     "@advclb/design-system-css": "0.0.0",
-    "@advclb/design-system-sass": "0.0.0"
+    "@advclb/design-system-icons": "0.0.0"
   },
   "peerDependencies": {
     "react": "*",

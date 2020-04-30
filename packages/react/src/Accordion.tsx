@@ -6,7 +6,10 @@ import React, {
   ReactNode,
 } from "react";
 import cn from "classnames";
+import { UP, DOWN } from "@advclb/design-system-base";
+import chevron from "@advclb/design-system-icons/chevron.json";
 import { Collapse } from "./Collapse";
+import { Icon } from "./Icon";
 
 export interface AccordionProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -51,15 +54,12 @@ export class Accordion extends Component<AccordionProps, AccordionState> {
 
     return (
       <div className={cn("ac-accordion", className)} {...rest}>
-        <div className="ac-accordion__header">
+        <button className="ac-accordion__header" onClick={computedToggle}>
           <div className="ac-accordion__header-inner">{header}</div>
-          <button
-            className="ac-accordion__header-close"
-            onClick={computedToggle}
-          >
-            toggle
-          </button>
-        </div>
+          <div className="ac-accordion__header-close">
+            <Icon data={chevron} direction={computedOpen ? UP : DOWN} />
+          </div>
+        </button>
         <Collapse className="ac-accordion__content" open={computedOpen}>
           {children}
         </Collapse>

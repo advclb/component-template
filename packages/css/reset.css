@@ -24,6 +24,8 @@ Global Style Reset
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background: var(--background-color);
   color: var(--text-color);
 }

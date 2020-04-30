@@ -1,7 +1,7 @@
 :root {
   --font-size: 16px;
-  --border-width: 2px;
-  --border-radius: 2px;
+  --border-width: 1px;
+  --border-radius: 5px;
   --space-small: 8px;
   --space-medium: 16px;
   --space-large: 32px;

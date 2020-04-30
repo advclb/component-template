@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-// Test CSS
+
 import "@advclb/design-system-css";
-// Test SaSS
-//import "@advclb/design-system-scss";
+import "@advclb/design-system-css/doc/index.css";
 
 const root = document.getElementById("root");
 ReactDOM.render(<App />, root);

@@ -1,0 +1,22 @@
+.doc-app {
+  display: flex;
+}
+
+.doc-app__side {
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: var(--space-medium);
+  flex: 0 0 300px;
+  background: var(--overlay-color);
+  overflow: auto;
+}
+
+.doc-app__side-header {
+  text-align: center;
+}
+
+.doc-app__main {
+  flex: 1 1 auto;
+}

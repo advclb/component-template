@@ -1,5 +1,6 @@
 import React, { ReactElement, useState } from "react";
 import { PropsDoc } from "../components/PropsDoc";
+import { DocContainer } from "../components/DocContainer";
 import { Button } from "../../../src/Button";
 import { Collapse } from "../../../src/Collapse";
 import doc from "!!@advclb/react-docgen-loader!../../../src/Collapse";
@@ -7,7 +8,7 @@ import doc from "!!@advclb/react-docgen-loader!../../../src/Collapse";
 export function CollapsePage(): ReactElement {
   const [open, toggle] = useState(false);
   return (
-    <>
+    <DocContainer>
       <h1>Collapse</h1>
       <h2>Showcase</h2>
       <h3>Basic</h3>
@@ -21,7 +22,7 @@ export function CollapsePage(): ReactElement {
       <hr></hr>
 
       <PropsDoc props={doc.props} />
-    </>
+    </DocContainer>
   );
 }
 

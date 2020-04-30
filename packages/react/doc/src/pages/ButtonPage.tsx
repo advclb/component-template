@@ -2,10 +2,11 @@ import React, { ReactElement } from "react";
 import { PropsDoc } from "../components/PropsDoc";
 import { Button } from "../../../src/Button";
 import doc from "!!@advclb/react-docgen-loader!../../../src/Button";
+import { DocContainer } from "../components/DocContainer";
 
 export function ButtonPage(): ReactElement {
   return (
-    <>
+    <DocContainer>
       <h1>Button</h1>
       <h2>Showcase</h2>
       <h3>Variants &amp; Themes</h3>
@@ -62,7 +63,7 @@ export function ButtonPage(): ReactElement {
       <hr></hr>
 
       <PropsDoc props={doc.props} />
-    </>
+    </DocContainer>
   );
 }
 

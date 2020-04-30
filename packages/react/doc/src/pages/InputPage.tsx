@@ -2,10 +2,11 @@ import React, { ReactElement } from "react";
 import { PropsDoc } from "../components/PropsDoc";
 import { Input } from "../../../src/Input";
 import doc from "!!@advclb/react-docgen-loader!../../../src/Input";
+import { DocContainer } from "../components/DocContainer";
 
 export function InputPage(): ReactElement {
   return (
-    <>
+    <DocContainer>
       <h1>Input</h1>
 
       <h2>Showcase</h2>
@@ -62,7 +63,7 @@ export function InputPage(): ReactElement {
       <hr></hr>
 
       <PropsDoc props={doc.props} />
-    </>
+    </DocContainer>
   );
 }
 
