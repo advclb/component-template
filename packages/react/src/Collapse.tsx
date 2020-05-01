@@ -78,7 +78,11 @@ export class Collapse extends Component<CollapseProps> {
 
     return (
       <div ref={this.root} className={cn("ac-collapse", className)} {...rest}>
-        <div className="ac-collapse__inner" ref={this.inner}>
+        <div
+          className="ac-collapse__inner"
+          ref={this.inner}
+          style={{ padding: 1, margin: -1 }} // avoid margin collapsing
+        >
           {children}
         </div>
       </div>

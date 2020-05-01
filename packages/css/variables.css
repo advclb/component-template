@@ -1,5 +1,6 @@
 :root {
   --font-size: 16px;
+  --font-family: "Source Sans Pro";
   --border-width: 1px;
   --border-radius: 5px;
   --space-small: 8px;
@@ -19,6 +20,7 @@
   --disabled-color: #a3a3a3;
   --disabled-diff-color: #eeeeee;
   --overlay-color: #00000022;
+  --selection-color: #52cc007c;
 }
 
 .light {

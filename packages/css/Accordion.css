@@ -10,13 +10,14 @@
   border: 0;
   background: transparent;
   color: inherit;
+  line-height: 1em;
   text-align: unset;
+  font-size: 1rem;
 }
 
 .ac-accordion__header-inner {
-  padding: var(--space-medium);
+  padding: var(--space-medium) 0;
   flex: 1 1 auto;
-  line-height: 1em;
 }
 
 .ac-accordion__header-close {
