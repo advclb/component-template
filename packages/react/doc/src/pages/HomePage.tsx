@@ -1,15 +1,16 @@
 import React, { ReactElement } from "react";
-import { DocContainer } from "../components/DocContainer";
+import Container from "../Container";
 
 export function HomePage(): ReactElement {
   return (
-    <DocContainer>
+    <Container>
       <h1>Adventure Club Design System</h1>
-    </DocContainer>
+    </Container>
   );
 }
 
 HomePage.meta = {
   path: "/",
   name: "Home",
+  group: "",
 };

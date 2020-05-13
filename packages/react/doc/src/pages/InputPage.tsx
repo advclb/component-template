@@ -1,12 +1,12 @@
 import React, { ReactElement } from "react";
-import { PropsDoc } from "../components/PropsDoc";
+import { PropsDoc } from "../PropsDoc";
 import { Input } from "../../../src/Input";
 import doc from "!!@advclb/react-docgen-loader!../../../src/Input";
-import { DocContainer } from "../components/DocContainer";
+import Container from "../Container";
 
 export function InputPage(): ReactElement {
   return (
-    <DocContainer>
+    <Container>
       <h1>Input</h1>
 
       <h2>Showcase</h2>
@@ -63,11 +63,12 @@ export function InputPage(): ReactElement {
       <hr></hr>
 
       <PropsDoc props={doc.props} />
-    </DocContainer>
+    </Container>
   );
 }
 
 InputPage.meta = {
   path: "/input",
   name: "Input",
+  group: "controls",
 };

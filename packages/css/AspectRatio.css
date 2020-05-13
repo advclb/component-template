@@ -1,0 +1,18 @@
+.ac-aspect-ratio__sizer {
+  position: relative;
+  height: 0;
+}
+
+.ac-aspect-ratio__sizer > * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  object-fit: cover;
+  object-position: center;
+}

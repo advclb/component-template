@@ -1,9 +1,9 @@
 import React, { ReactElement, useState } from "react";
-import { PropsDoc } from "../components/PropsDoc";
+import { PropsDoc } from "../PropsDoc";
 import { Accordion } from "../../../src/Accordion";
 import doc from "!!@advclb/react-docgen-loader!../../../src/Accordion";
-import { DocContainer } from "../components/DocContainer";
-import { Example } from "../components/Example";
+import Container from "../Container";
+import Example from "../Example";
 
 const content = (
   <>
@@ -37,7 +37,7 @@ const content = (
 export function AccordionPage(): ReactElement {
   const [open, toggle] = useState(true);
   return (
-    <DocContainer>
+    <Container>
       <h1>Accordion</h1>
 
       <h2>Showcase</h2>
@@ -80,11 +80,12 @@ export function AccordionPage(): ReactElement {
       <hr></hr>
 
       <PropsDoc props={doc.props} />
-    </DocContainer>
+    </Container>
   );
 }
 
 AccordionPage.meta = {
   path: "/accordion",
   name: "Accordion",
+  group: "blocks",
 };

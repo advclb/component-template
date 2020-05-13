@@ -1,9 +1,9 @@
 import React, { ReactNode, ReactElement } from "react";
 
-export type DocContainerProps = {
+export type ContainerProps = {
   children: ReactNode;
 };
 
-export function DocContainer({ children }: DocContainerProps): ReactElement {
+export default function Container({ children }: ContainerProps): ReactElement {
   return <div className="doc-container">{children}</div>;
 }

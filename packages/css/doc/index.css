@@ -2,5 +2,6 @@ body {
   overflow-y: scroll; /* avoid content position bouncing */
 }
 
-@import url("./DocApp.css");
-@import url("./DocContainer.css");
+@import url("./App.css");
+@import url("./Sidebar.css");
+@import url("./Container.css");

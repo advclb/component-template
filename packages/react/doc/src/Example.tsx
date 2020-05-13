@@ -13,7 +13,11 @@ export interface ExampleProps {
   children?: ReactNode;
 }
 
-export function Example({ children, jsx, css }: ExampleProps): ReactElement {
+export default function Example({
+  children,
+  jsx,
+  css,
+}: ExampleProps): ReactElement {
   return (
     <div className="doc-example">
       {children}
