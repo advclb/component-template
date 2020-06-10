@@ -1,0 +1,16 @@
+.ac-product-card {
+  max-width: 300px;
+  background-color: var(--alt-background-color);
+}
+
+.ac-product-card__body {
+  padding: var(--space-small);
+}
+
+.ac-product-card__price {
+  float: right;
+}
+
+.ac-product-card__foot {
+  padding: var(--space-small);
+}

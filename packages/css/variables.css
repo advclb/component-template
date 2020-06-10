@@ -10,6 +10,7 @@
   /* light theme colors */
   --text-color: #444444;
   --background-color: #ffffff;
+  --alt-background-color: #dddddd;
   --link-color: #089784;
   --primary-color: #7a175d;
   --primary-diff-color: #ffffff;
@@ -26,6 +27,7 @@
 .light {
   --text-color: #444444;
   --background-color: #ffffff;
+  --alt-background-color: #dddddd;
   --link-color: #089784;
   --primary-color: #7a175d;
   --primary-diff-color: #ffffff;
@@ -43,6 +45,7 @@
   :root {
     --text-color: #ffffff;
     --background-color: #444444;
+    --alt-background-color: #333333;
     --primary-color: #f061c5;
     --secondary-color: #ffffff;
     --secondary-diff-color: #444444;
@@ -52,6 +55,7 @@
 .dark {
   --text-color: #ffffff;
   --background-color: #444444;
+  --alt-background-color: #333333;
   --primary-color: #f061c5;
   --secondary-color: #ffffff;
   --secondary-diff-color: #444444;
