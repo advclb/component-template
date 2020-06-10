@@ -1,0 +1,24 @@
+.ac-slides {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+
+.ac-slides::-webkit-scrollbar-track {
+  display: none; /* hide scrollbar in Chrome/Safari */
+}
+
+.ac-slides__item {
+  position: relative;
+  padding-right: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.ac-slides__item:last-child {
+  padding-right: 0;
+}

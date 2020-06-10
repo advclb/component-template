@@ -8,3 +8,4 @@ export * from "./CollapsePage";
 export * from "./InputPage";
 export * from "./ProductCardPage";
 export * from "./ProductGridPage";
+export * from "./SlidesPage";
