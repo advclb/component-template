@@ -77,6 +77,17 @@ export function AccordionPage(): ReactElement {
         </Accordion>
       </Example>
 
+      <h3>Multiple</h3>
+      <Example
+        jsx={`<Accordion header="Accordion">...</Accordion>
+<Accordion header="Accordion">...</Accordion>
+<Accordion header="Accordion">...</Accordion>`}
+      >
+        <Accordion header="Accordion">{content}</Accordion>
+        <Accordion header="Accordion">{content}</Accordion>
+        <Accordion header="Accordion">{content}</Accordion>
+      </Example>
+
       <hr></hr>
 
       <PropsDoc props={doc.props} />

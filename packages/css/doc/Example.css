@@ -1,0 +1,4 @@
+.doc-example__view {
+  padding: var(--space-medium);
+  background: var(--overlay-color);
+}

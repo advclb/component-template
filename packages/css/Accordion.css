@@ -3,6 +3,10 @@
   border-bottom: var(--border-width) solid var(--secondary-color);
 }
 
+.ac-accordion + .ac-accordion {
+  border-top: 0;
+}
+
 .ac-accordion__header {
   display: flex;
   width: 100%;
@@ -16,10 +20,14 @@
 }
 
 .ac-accordion__header-inner {
-  padding: var(--space-medium) 0;
+  padding: var(--space-medium);
   flex: 1 1 auto;
 }
 
 .ac-accordion__header-close {
   padding: var(--space-medium);
+}
+
+.ac-accordion__content {
+  padding: 0 var(--space-medium);
 }

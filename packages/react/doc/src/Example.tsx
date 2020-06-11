@@ -20,7 +20,7 @@ export default function Example({
 }: ExampleProps): ReactElement {
   return (
     <div className="doc-example">
-      {children}
+      <div className="doc-example__view">{children}</div>
       {jsx && (
         <SyntaxHighlighter language="jsx" style={style}>
           {jsx.trim()}
