@@ -12,17 +12,9 @@ export interface SlidesProps
   align?: "left" | "right" | "center";
 }
 
-interface SlidesState {
-  activeIndex: number;
-}
-
-export class Slides extends Component<SlidesProps, SlidesState> {
+export class Slides extends Component<SlidesProps> {
   scrollEndTimeout?: number = undefined;
   root = createRef<HTMLDivElement>();
-
-  state: SlidesState = {
-    activeIndex: 0,
-  };
 
   componentDidMount(): void {
     if (typeof this.props.activeIndex === "number") {
@@ -71,27 +63,35 @@ export class Slides extends Component<SlidesProps, SlidesState> {
     window.clearTimeout(this.scrollEndTimeout);
     this.scrollEndTimeout = window.setTimeout(() => {
       const index = this.getActiveIndex();
-      if (this.props.onActiveIndexChanged) {
-        if (this.props.activeIndex !== index) {
-          this.props.onActiveIndexChanged(index);
-        }
-      } else {
-        this.setState({ activeIndex: index });
+      if (this.props.onActiveIndexChanged && this.props.activeIndex !== index) {
+        this.props.onActiveIndexChanged(index);
       }
-    }, 100);
+    }, 200);
   };
 
   render(): ReactElement {
-    const { children, className, ...rest } = this.props;
+    const {
+      children,
+      className,
+      activeIndex,
+      onActiveIndexChanged, // eslint-disable-line @typescript-eslint/no-unused-vars
+      align = "left",
+      ...rest
+    } = this.props;
     return (
       <div
         ref={this.root}
-        className={cn("ac-slides", className)}
+        className={cn("ac-slides", "ac-slides--" + align, className)}
         {...rest}
         onScroll={this.handleScroll}
       >
         {Children.map(children, (child, index) => (
-          <div key={index} className="ac-slides__item">
+          <div
+            key={index}
+            className={cn("ac-slides__item", {
+              "ac-slides__item--active": index === activeIndex,
+            })}
+          >
             {child}
           </div>
         ))}
