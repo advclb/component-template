@@ -42,10 +42,12 @@ export class Slides extends Component<SlidesProps, SlidesState> {
     if (!root || !items?.length) {
       return;
     }
-    const item = items.item(index) as HTMLElement;
-    if (item) {
-      item.scrollIntoView({ block: "nearest", inline: "start" });
+    let distance = 0;
+    for (let i = 0; i < index; i++) {
+      const item = items.item(i) as HTMLElement;
+      distance += item.clientWidth;
     }
+    root.scroll({ left: distance });
   }
 
   getActiveIndex(): number {
