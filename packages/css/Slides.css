@@ -7,8 +7,8 @@
   scrollbar-width: none; /* hide scrollbar in Firefox */
 }
 
-.ac-slides::-webkit-scrollbar-track {
-  display: none; /* hide scrollbar in Chrome/Safari */
+.ac-slides::-webkit-scrollbar {
+  display: none !important; /* hide scrollbar in Chrome/Safari */
 }
 
 .ac-slides__item {
