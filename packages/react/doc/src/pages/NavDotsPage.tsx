@@ -11,7 +11,7 @@ export function NavDotsPage(): ReactElement {
     <Container>
       <h1>NavDots</h1>
       <h2>Showcase</h2>
-      <h3>Basic</h3>
+      <h3>Dots</h3>
       <Example
         jsx={`<NavDots
   length={5}
@@ -20,6 +20,23 @@ export function NavDotsPage(): ReactElement {
 />`}
       >
         <NavDots
+          length={5}
+          activeIndex={activeIndex}
+          onActiveIndexChange={setActiveIndex}
+        />
+      </Example>
+
+      <h3>Dashes</h3>
+      <Example
+        jsx={`<NavDots
+  shape="dash"
+  length={5}
+  activeIndex={activeIndex}
+  onActiveIndexChange={setActiveIndex}
+/>`}
+      >
+        <NavDots
+          shape="dash"
           length={5}
           activeIndex={activeIndex}
           onActiveIndexChange={setActiveIndex}
