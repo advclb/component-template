@@ -2,8 +2,8 @@ import React, { ReactElement, useState } from "react";
 import { PropsDoc } from "../PropsDoc";
 import Container from "../Container";
 import Example from "../Example";
-import { Button } from "../../../src/Button";
 import { Slides } from "../../../src/Slides";
+import { NavDots } from "../../../src/NavDots";
 import doc from "!!@advclb/react-docgen-loader!../../../src/Slides";
 
 function DummyCard({ children }: { children: string }): ReactElement {
@@ -31,61 +31,64 @@ export function SlidesPage(): ReactElement {
     <Container>
       <h1>Slides</h1>
       <h2>Showcase</h2>
-      <h3>Basic</h3>
-      <p>
-        <Button
-          onClick={(): void => setActiveIndex(activeIndex - 1)}
-          disabled={activeIndex < 1}
-        >
-          -
-        </Button>
-
-        <Button
-          onClick={(): void => setActiveIndex(0)}
-          disabled={activeIndex === 0}
-        >
-          1
-        </Button>
-        <Button
-          onClick={(): void => setActiveIndex(1)}
-          disabled={activeIndex === 1}
-        >
-          2
-        </Button>
-        <Button
-          onClick={(): void => setActiveIndex(2)}
-          disabled={activeIndex === 2}
-        >
-          3
-        </Button>
-        <Button
-          onClick={(): void => setActiveIndex(3)}
-          disabled={activeIndex === 3}
-        >
-          4
-        </Button>
-
-        <Button
-          onClick={(): void => setActiveIndex(activeIndex + 1)}
-          disabled={activeIndex > 2}
-        >
-          +
-        </Button>
-      </p>
+      <h3>Slides with dots</h3>
       <Example
         jsx={`<Slides activeIndex={activeIndex} onActiveIndexChanged={setActiveIndex}>
   <div>...</div>
   <div>...</div>
   <div>...</div>
   <div>...</div>
-</Slides>`}
+  <div>...</div>
+</Slides>
+<NavDots
+  length={5}
+  activeIndex={activeIndex}
+  onActiveIndexChange={setActiveIndex}
+/>`}
       >
         <Slides activeIndex={activeIndex} onActiveIndexChange={setActiveIndex}>
           <DummyCard>1</DummyCard>
           <DummyCard>2</DummyCard>
           <DummyCard>3</DummyCard>
           <DummyCard>4</DummyCard>
+          <DummyCard>5</DummyCard>
         </Slides>
+        <NavDots
+          length={5}
+          activeIndex={activeIndex}
+          onActiveIndexChange={setActiveIndex}
+        />
+      </Example>
+
+      <h3>Slides with dashes</h3>
+      <Example
+        jsx={`<Slides activeIndex={activeIndex} onActiveIndexChanged={setActiveIndex}>
+  <div>...</div>
+  <div>...</div>
+  <div>...</div>
+  <div>...</div>
+  <div>...</div>
+</Slides>
+<NavDots
+  shape="dash"
+  length={5}
+  activeIndex={activeIndex}
+  onActiveIndexChange={setActiveIndex}
+/>`}
+      >
+        <Slides activeIndex={activeIndex} onActiveIndexChange={setActiveIndex}>
+          <DummyCard>1</DummyCard>
+          <DummyCard>2</DummyCard>
+          <DummyCard>3</DummyCard>
+          <DummyCard>4</DummyCard>
+          <DummyCard>5</DummyCard>
+        </Slides>
+        <NavDots
+          shape="dash"
+          length={5}
+          activeIndex={activeIndex}
+          onActiveIndexChange={setActiveIndex}
+        />
       </Example>
 
       <hr></hr>
