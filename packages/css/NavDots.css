@@ -1,0 +1,22 @@
+.ac-nav-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.ac-nav-dots__item {
+  padding: var(--space-small);
+  border: 0;
+  background: transparent;
+}
+
+.ac-nav-dots__dot {
+  display: block;
+  width: var(--space-small);
+  height: var(--space-small);
+  border-radius: var(--space-small);
+  background-color: var(--secondary-color);
+}
+
+.ac-nav-dots__item--active .ac-nav-dots__dot {
+  background-color: var(--primary-color);
+}

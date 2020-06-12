@@ -5,5 +5,8 @@ export * from "./ButtonLink";
 export * from "./Collapse";
 export * from "./Icon";
 export * from "./Input";
+export * from "./NavDots";
 export * from "./ProductCard";
 export * from "./ProductGrid";
+export * from "./Slider";
+export * from "./Slides";

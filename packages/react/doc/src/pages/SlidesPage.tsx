@@ -80,7 +80,7 @@ export function SlidesPage(): ReactElement {
   <div>...</div>
 </Slides>`}
       >
-        <Slides activeIndex={activeIndex} onActiveIndexChanged={setActiveIndex}>
+        <Slides activeIndex={activeIndex} onActiveIndexChange={setActiveIndex}>
           <DummyCard>1</DummyCard>
           <DummyCard>2</DummyCard>
           <DummyCard>3</DummyCard>

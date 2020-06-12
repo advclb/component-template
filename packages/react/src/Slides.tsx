@@ -8,7 +8,7 @@ export interface SlidesProps
   > {
   children: ReactElement[];
   activeIndex?: number;
-  onActiveIndexChanged?: (index: number) => void;
+  onActiveIndexChange?: (index: number) => void;
   align?: "left" | "right" | "center";
 }
 
@@ -63,8 +63,8 @@ export class Slides extends Component<SlidesProps> {
     window.clearTimeout(this.scrollEndTimeout);
     this.scrollEndTimeout = window.setTimeout(() => {
       const index = this.getActiveIndex();
-      if (this.props.onActiveIndexChanged && this.props.activeIndex !== index) {
-        this.props.onActiveIndexChanged(index);
+      if (this.props.onActiveIndexChange && this.props.activeIndex !== index) {
+        this.props.onActiveIndexChange(index);
       }
     }, 200);
   };
@@ -74,7 +74,7 @@ export class Slides extends Component<SlidesProps> {
       children,
       className,
       activeIndex,
-      onActiveIndexChanged, // eslint-disable-line @typescript-eslint/no-unused-vars
+      onActiveIndexChange: onActiveIndexChanged, // eslint-disable-line @typescript-eslint/no-unused-vars
       align = "left",
       ...rest
     } = this.props;
