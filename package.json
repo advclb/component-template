@@ -11,7 +11,7 @@
     "@advclb/react-docgen-loader": "^0.1.0",
     "@advclb/sassdoc-loader": "^0.1.0",
     "@advclb/scripts": "^0.8.0",
-    "@angular/core": "^9.1.1",
+    "@angular/core": "^11.0.5",
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
